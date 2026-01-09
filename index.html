@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">*Grok*</a>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#find-job">Find Jobs</a>
+            <a href="#search">Search Job</a>
+            <a href="#">Post Job</a>
+            <a href="#upload-resume">Upload Resume</a>
+            <a href="#about">About Us</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="cta-buttons">
+            <button class="btn btn-green">Login / Sign Up</button>
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Your Dream Job Awaits</h1>
+            <p>Explore thousands of job opportunities based on your skills and location.</p>
+            
+            <div class="search-bar">
+    <select id="job-role-select">
+        <option value="">Select Job Role...</option>
+        <option value="web-developer">Web Developer</option>
+        <option value="data-scientist">Data Scientist</option>
+        <option value="graphic-designer">Graphic Designer</option>
+        <option value="product-manager">Product Manager</option>
+        <option value="hr-specialist">HR Specialist</option>
+        <option value="financial-analyst">Financial Analyst</option>
+        <option value="marketing-manager">Marketing Manager</option>
+    </select>
+    
+    <input type="text" placeholder="Keywords (e.g. React, Java)">
+    
+    <input type="text" placeholder="Location (e.g. Chennai, Remote)">
+    
+    <button class="btn btn-search">Search Jobs</button>
+            </div>
+            <div class="cta-group">
+                 <button class="btn btn-search-alt">Find Talent</button>
+                 <button class="btn btn-post-job">Post a Job</button>
+            </div>
+        </div>
+        </section>
+
+    <section class="trending-jobs-section" id="find-job">
+        <h2>🔥 Trending Job Categories</h2>
+        <div class="job-cards-container">
+
+            <div class="job-card">
+                <h3>Jobs for Freshers</h3>
+                <p>Full Time, Entry Level Jobs.</p>
+                <div class="card-footer">
+                    <a href="#">View all <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>Jobs for Experienced</h3>
+                <p>Senior roles, Management positions.</p>
+                 <div class="card-footer">
+                    <a href="#">View all <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <h3>Part Time Jobs</h3>
+                <p>Work from home, Flexible hours.</p>
+                 <div class="card-footer">
+                    <a href="#">View all <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="resume-upload-section" id="upload-resume">
+    <div class="resume-content-left">
+        <div class="upload-box">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <span class="upload-icon-cloud"></span>
+            
+            <h2>Upload Your Resume</h2>
+            <p>Let employers find you and apply directly!</p>
+
+            <input type="file" id="file-input" accept=".pdf, .doc, .docx" hidden>
+
+            <button class="btn btn-primary" id="upload-button">
+                Click to Upload
+            </button>
+            
+            <p id="file-status" style="margin-top: 10px; font-style: italic; color: var(--text-dark);"></p>
+        </div>
+    </div>
+    
+    <div class="info-area">
+        <h3>Why Upload?</h3>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Increase visibility by 50%</li>
+            <li><i class="fas fa-check-circle"></i> Apply with 1-click</li>
+            <li><i class="fas fa-check-circle"></i> Personalized job recommendations</li>
+        </ul>
+    </div>
+</section>
+
+    <section class="reviews-section" id="reviews">
+        <h2>What Our Users Say</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <p>"Found my first job within a week! The UI is clean and the search filters are spot on."</p>
+                <div class="reviewer">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Reviewer 1">
+                    <h4>Priya S.</h4>
+                    <span>Web Developer</span>
+                </div>
+            </div>
+             <div class="review-card">
+                <p>"Highly recommend this portal for freshers. Easy to navigate and lots of entry-level opportunities."</p>
+                <div class="reviewer">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Reviewer 2">
+                    <h4>Karthik R.</h4>
+                    <span>Product Designer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button class="btn btn-green" type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#about">About Us</a>
+        </div>
+        <p>&copy; 2025 Grok Job Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
